@@ -2,7 +2,7 @@
 ##Code:
 n=int(input("enter a number: "))
 count=0
-for i in range(n,n+1):
+for i in range(1,n+1):
     if (n%i==0):
         count=count+1
 if (count==2):
@@ -19,7 +19,7 @@ is prime
 n=int(input("enter a number: "))
 fact=1
 for i in range(1,n+1):
-    fact=fact+1
+    fact=fact*i
 print("factorial of",n,"is", fact)
 ##Output:
 enter a number:5
@@ -51,7 +51,7 @@ sum=o
 while(n>0):
     r=n%10
     sum=sum+r
-    n=n/10
+    n=n//10
 print("sum of digits of n is: ",sum)
 ##Output:
 enter a number:786
@@ -65,8 +65,9 @@ rev=0
 while(n>0):
     r=n%10
     rev=rev*10+r
-    n=n/10
+    n=n//10
 print("reverse of n is", rev)
 ##Output:
 enter a number:786
 reverse of 786 is 687
+
